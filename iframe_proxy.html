@@ -11,12 +11,10 @@
 <?php
 $url = htmlspecialchars($_GET["url"]);
 $callback = htmlspecialchars($_GET["callback"]);
-$crea_url = "top.nuevaUrlProxy";
+$crea_url = "alert";
 
 if($callback == "")
 {
-	echo "<script>console.log(top);</script>";
-	echo "<script>console.log(top.document);</script>";
 	echo "<script>".$crea_url."(document.location)</script>";
 }
 else

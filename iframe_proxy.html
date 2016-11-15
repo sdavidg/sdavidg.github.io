@@ -16,7 +16,7 @@ $crea_url = "top.nuevaUrlProxy";
 if($callback == "")
 {
 	echo "<script>console.log(window);</script>";
-	echo "<script>console.log(top);</script>";
+	echo "<script>console.log(top.stringTrim);</script>";
 	echo "<script>".$crea_url."(document.location)</script>";
 }
 else

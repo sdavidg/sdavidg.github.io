@@ -14,8 +14,7 @@ $callback = htmlspecialchars($_GET["callback"]);
 $crea_url = "alert";
 
 if($callback == "")
-{
-	echo "<script>top.x=document.location</script>";
+{	
 	echo "<script>".$crea_url."(document.location)</script>";
 }
 else
